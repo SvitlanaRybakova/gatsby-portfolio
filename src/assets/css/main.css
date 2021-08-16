@@ -225,8 +225,10 @@ Navbar
 }
 .nav-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 .nav-header img {
   margin-bottom: 0.375rem;
