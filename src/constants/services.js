@@ -1,21 +1,21 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaCode, FaSketch, FaApple } from "react-icons/fa"
 const services = [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
-    title: "web development",
+    title: "IOS development",
     text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
-    title: "web design",
+    title: "IOS design",
     text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
+    icon: <FaApple className="service-icon" />,
     title: "app design",
     text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
   },
