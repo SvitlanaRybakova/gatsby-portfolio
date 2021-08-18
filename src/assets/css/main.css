@@ -155,8 +155,7 @@ p {
   display: block;
   width: 12rem;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
 }
 
 /* section */
@@ -833,7 +832,7 @@ Projects
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
   font-size: 0.85rem;
 }

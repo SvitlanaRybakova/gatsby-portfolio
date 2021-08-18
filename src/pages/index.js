@@ -5,14 +5,46 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Seo from "../components/Seo"
-const IndexPage = () => {
+
+export const query = graphql`
+  {
+    allStrapiProject(filter: { homeProject: { eq: true } }) {
+      nodes {
+        description
+        homeProject
+        github
+        id
+        slug
+        title
+        url
+        stack {
+          id
+          title
+        }
+        image {
+          localFile {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+const IndexPage = ({data}) => {
+  
+   const {
+     allStrapiProject: { nodes: projects },
+   } = data
   return (
     <>
       <main>
         <Hero />
         <Services />
         <Jobs />
-        <Projects />
+        <Projects title="home projects" showLink projects={projects} />
       </main>
     </>
   )

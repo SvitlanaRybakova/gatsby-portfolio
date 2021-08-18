@@ -1,16 +1,16 @@
 export const companies = [
   {
-    id: 1,
+    id: 6,
     name: "EPAM",
     link: "https://www.epam.com/",
   },
   {
-    id: 2,
+    id: 7,
     name: "Ciklum",
     link: "https://www.ciklum.com/",
   },
   {
-    id: 3,
+    id: 8,
     name: "ISKRATEL",
     link: "https://www.iskratel.com/en/",
   },
