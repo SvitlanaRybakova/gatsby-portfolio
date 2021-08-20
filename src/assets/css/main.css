@@ -1095,14 +1095,17 @@ Contact Page
   margin-bottom: 1.25rem;
   background: var(--clr-grey-10);
   border-radius: var(--radius);
-  text-transform: uppercase;
-  letter-spacing: var(--spacing);
+  /* text-transform: uppercase; */
+  /* letter-spacing: var(--spacing); */
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-family: var(--ff-primary);
 }
 
 .form-control::placeholder {
-  font-family: var(--ff-primary);
+  /* font-family: var(--ff-primary); */
   color: var(--clr-grey-1);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: var(--spacing);
 }
 
@@ -1121,3 +1124,11 @@ Contact Page
   padding-top: 5px;
 }
 
+.confirmation {
+  color: #279b37;
+  font-style: italic;
+}
+
+.confirm-container{
+  min-height: 30%;
+}
