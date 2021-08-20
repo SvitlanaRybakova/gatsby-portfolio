@@ -2,9 +2,7 @@ import React from "react"
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaDribbbleSquare,
-  FaBehanceSquare,
-  FaTwitterSquare,
+  FaFileDownload,
   FaGithubSquare,
 } from "react-icons/fa"
 
@@ -23,7 +21,8 @@ const data = [
     id: 3,
     icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
     url: "https://github.com/rdv0011",
-  }
+  },
+ 
 ]
 
 export default data

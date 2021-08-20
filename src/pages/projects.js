@@ -35,7 +35,7 @@ const ProjectsPage = ({data}) => {
   const {
     allStrapiProject: { nodes: projects },
   } = data
-console.log(projects)
+
   return (
     <>
       <Seo title="Projects" />

@@ -8,7 +8,10 @@ import Seo from "../components/Seo"
 
 export const query = graphql`
   {
-    allStrapiProject(filter: { homeProject: { eq: true } }) {
+    allStrapiProject(
+      filter: { homeProject: { eq: true } }
+      sort: { fields: id, order: ASC }
+    ) {
       nodes {
         description
         homeProject

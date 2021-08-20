@@ -723,11 +723,12 @@ Jobs
 .hide-section {
   padding: 2rem 0;
 }
-.section-jobs{
+
+.section-jobs {
   padding-top: 5rem;
   padding-bottom: 1rem;
-
 }
+
 @media screen and (min-width: 992px) {
   .jobs-center {
     width: 90vw;
@@ -995,8 +996,9 @@ About Page
 .about-img-svg {
   margin-bottom: 2rem;
   height: 25rem;
-  width: 100%;
+  max-width: 300px;
   display: block;
+  margin: 0 auto;
 }
 
 .about-text .section-title {
@@ -1113,3 +1115,9 @@ Contact Page
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+
+.download-link {
+  height: 29px;
+  padding-top: 5px;
+}
+

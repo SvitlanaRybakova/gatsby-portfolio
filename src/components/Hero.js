@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import socialLinks from "../constants/social_links"
 // import heroImg from "../assets/images/hero.svg"
 import { StaticImage } from "gatsby-plugin-image"
+import { FaFileDownload } from "react-icons/fa"
+import cv from "../../CV-DmitryR.pdf"
 
 const Hero = () => {
  
@@ -30,6 +32,9 @@ const Hero = () => {
                   </a>
                 )
               })}
+              <a href={cv} download>
+                <FaFileDownload className="social-link download-link" />
+              </a>
             </div>
           </div>
         </article>
