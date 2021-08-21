@@ -808,9 +808,10 @@ Projects
   font-weight: 500;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
-  text-transform: uppercase;
   color: var(--clr-grey-1);
   transition: var(--transition);
+  letter-spacing: inherit;
+  font-weight: bold;
 }
 
 .project-slug h3:hover {
@@ -818,7 +819,7 @@ Projects
 }
 
 .project-desc {
-  word-spacing: 15px;
+  /* word-spacing: 15px; */
   color: var(--clr-grey-3);
 }
 
@@ -1129,6 +1130,14 @@ Contact Page
   font-style: italic;
 }
 
-.confirm-container{
+.confirm-container {
   min-height: 30%;
+}
+
+.services-title {
+  text-transform: none;
+}
+
+.service p{
+  text-align: justify;
 }

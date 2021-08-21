@@ -3,6 +3,9 @@ import links from "../constants/links"
 import socialLinks from "../constants/social_links"
 import { Link } from "gatsby"
 import { FaTimes } from "react-icons/fa"
+import { FaFileDownload } from "react-icons/fa"
+import cv from "../../CV-DmitryR.pdf"
+
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <aside className={isOpen ? "sidebar show-sidebar" : "sidebar"}>
@@ -20,6 +23,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               </li>
             )
           })}
+         
         </ul>
         <ul className={isOpen ? "social-links sidebar-icons" : null}>
           {socialLinks.map(link => {
@@ -31,6 +35,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               </li>
             )
           })}
+          <li>
+            <a href={cv} download>
+            <FaFileDownload className="social-link download-link" />
+          </a>
+          </li>
         </ul>
       </div>
     </aside>
