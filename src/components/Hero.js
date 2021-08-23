@@ -26,6 +26,7 @@ const Hero = () => {
                     href={link.url}
                     key={link.id}
                     target="_blank"
+                    rel="noreferrer"
                     className="social-link"
                   >
                     {link.icon}

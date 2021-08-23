@@ -6,7 +6,13 @@
 
 module.exports = {
   /* Your site config here */
-
+  siteMetadata: {
+    title: "iOS development",
+    description: "portfolio with CV, iOS development",
+    titleTemplate: `%s | iOS Portfolio`,
+    url: `https://dmitry-rybakov-ios-developer-cv.netlify.app`,
+    image: `/mainimg.png`,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

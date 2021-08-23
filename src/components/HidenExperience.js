@@ -16,7 +16,7 @@ const HidenExperience = ({prevJobs}) => {
               return (
                 <li key={company.id} className="job-desc">
                   <IoMdDoneAll className="job-icon" />
-                  <a href={company.link} target="_blank">
+                  <a href={company.link} target="_blank" rel="noreferrer">
                     <span className="project-link">{company.name}</span>
                   </a>
                 </li>
@@ -30,7 +30,7 @@ const HidenExperience = ({prevJobs}) => {
               return (
                 <li key={project.id} className="job-desc">
                   <IoMdDoneAll className="job-icon" />
-                  <a href={project.link} target="_blank">
+                  <a href={project.link} target="_blank" rel="noreferrer">
                     <span className="project-link">{project.link}</span>
                   </a>
                 </li>

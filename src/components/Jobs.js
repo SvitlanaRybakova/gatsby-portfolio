@@ -78,6 +78,7 @@ const Jobs = () => {
                   <a
                     href={jobs[0].link}
                     target="_blank"
+                    rel="noreferrer"
                     className="project-link"
                   >
                     {jobs[0].link}
@@ -110,11 +111,9 @@ const Jobs = () => {
           </article>
         </div>
       </section>
-      <HidenExperience prevJobs={prevJobs}/>
-      <button
-        className="btn center-btn"
-        onClick={() => setPrevJobs(!prevJobs)}
-      >{ prevJobs ? "hide info": "more info"}
+      <HidenExperience prevJobs={prevJobs} />
+      <button className="btn center-btn" onClick={() => setPrevJobs(!prevJobs)}>
+        {prevJobs ? "hide info" : "more info"}
       </button>
     </>
   )
