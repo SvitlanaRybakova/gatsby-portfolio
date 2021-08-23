@@ -1138,6 +1138,31 @@ Contact Page
   text-transform: none;
 }
 
-.service p{
+.service p {
   text-align: justify;
+}
+
+.content-wrapper {
+  margin-top: 0px;
+  padding-bottom: 130px;
+}
+
+.single-project-img {
+  margin-top: 50px;
+}
+
+@media(min-width: 880px) {
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .single-project-description {
+    text-align: justify;
+    flex: 1 0 60%;
+    padding-left: 30px;
+  }
 }
