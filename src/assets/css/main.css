@@ -208,7 +208,7 @@ p {
 }
 
 .social-link {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   color: var(--clr-grey-1);
   transition: var(--transition);
 }
@@ -301,6 +301,9 @@ Navbar
 @media screen and (min-width: 992px) {
   .navbar {
     background: transparent;
+  }
+  .social-link {
+    font-size: 1.75rem;
   }
 }
 
@@ -489,7 +492,7 @@ Hero
 }
 
 .hero-img {
-  display: none;
+  display: none !important;
 }
 
 .hero-info h4 {
@@ -525,7 +528,7 @@ Hero
     grid-column: 1 / span 8;
   }
   .hero-img {
-    display: block;
+    display: block !important;
     grid-row: 1/1;
     grid-column: 7/-1;
   }
@@ -1121,10 +1124,15 @@ Contact Page
 }
 
 .download-link {
-  height: 29px;
+  height: 43px;
   padding-top: 5px;
 }
 
+@media(min-width: 992px){
+.download-link{
+  height: 30px;
+}
+}
 .confirmation {
   color: #279b37;
   font-style: italic;
@@ -1132,6 +1140,8 @@ Contact Page
 
 .confirm-container {
   min-height: 30%;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .services-title {
@@ -1145,10 +1155,21 @@ Contact Page
 .content-wrapper {
   margin-top: 0px;
   padding-bottom: 130px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-template-page h2 {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .single-project-img {
   margin-top: 50px;
+}
+
+.single-project-description {
+  text-align: justify;
 }
 
 @media(min-width: 880px) {
@@ -1159,7 +1180,6 @@ Contact Page
     width: 80%;
     margin: 0 auto;
   }
-
   .single-project-description {
     text-align: justify;
     flex: 1 0 60%;

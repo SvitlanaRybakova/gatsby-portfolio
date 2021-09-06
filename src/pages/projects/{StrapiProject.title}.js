@@ -20,9 +20,9 @@ export const query = graphql`
 `
 
 const ProjectTemplate = ({ pageContext: { title }, data }) => {
-  //
+  
   const img = data.strapiProject.image.localFile
-  console.log(img)
+
   return (
     <>
       <Seo
